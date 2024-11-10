@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: start;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+            margin-top: 20px;
+            position: relative;
+            width: 300px;
+        }
+        .image {
+            width: 100%;
+            display: block;
+            transition: filter 0.3s;
+        }
+        .div_paragraph {
+            display: none;
+            background: rgba(164, 159, 159, 0.5);
+            color: black;
+            text-align: center;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px dashed black;
+            width: 100%;
+            position: absolute;
+            top: 100%;
+            left: 0;
+        }
+        .container:hover .image {
+            filter: brightness(50%);
+        }
+        .container:hover .div_paragraph,
+        .div_paragraph:hover {
+            display: block;
+        }
+        p {
+            text-transform: capitalize;
+            margin: 10px 0;
+        }
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="صوره شخصيه.jpg" alt="صوره شخصيه" class="image">
+        <div class="div_paragraph">
+            <h2>Taha Mohammed Fawy</h2>
+            <p>Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Asperiores, quia delectus fuga
+                repellendus esse adipisci sed officiis cupiditate 
+                culpa distinctio! Rem adipisci molestiae ipsum 
+                ipsam aliquam praesentium doloribus. 
+            </p>
+            <i class="fa-regular fa-envelope"></i> <br>
+            <a href="mailto:tahafawy1@gmail.com" target="_blank">tahafawy1@gmail.com</a>
+            <br>
+            <i class="fa-solid fa-phone"></i><br>
+            <a href="https://wa.me/1159511474" target="_blank">201159511474</a><br>
+            <i class="fa-brands fa-telegram"></i> <br>
+            <a href="https://t.me/201159511474" target="_blank">Telegram</a>
+        </div>
+    </div>
+</body>
+</html>

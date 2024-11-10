@@ -1,0 +1,103 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+body {
+
+background-color: aliceblue;
+}
+header {
+text-align: center;
+display:flex;
+align-items: center;
+border-bottom:5px solid red ;
+}
+header img {
+width: 500px;
+height: 500px;
+border-radius: 50px;
+margin-left: 10px;
+}
+.name,.b {
+  font-size: 18px;
+padding: 50px 300px;
+text-transform: capitalize;
+}
+main {
+  width: 1000px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+
+  margin-left: 250px;
+}
+.Icon-1,.Icon-2,.Icon-3{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  text-align: center;
+}
+main i {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+nav {
+  border-top:5px solid red ;
+height: 400px;
+text-align: center;
+flex-direction: row;
+display: flex;
+border-bottom:5px solid red ;
+}
+nav img {
+margin: 50px 0 0 325px;
+width: 300px;
+height: 300x;
+}
+nav h3 {
+margin: 100px 0 0 300px;
+}
+nav p {
+margin: 30px 0 0 300px;
+width: 250px;
+height: 100px;
+}
+aside {
+  display: flex;
+  justify-content:left;
+  margin-left: 300px;
+  margin-top: 100px;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  direction: rtl;
+}
+
+.Trunk1 ,.Trunk2,.Trunk3 {
+  background-color: #e0e0e0;
+  width: 275px;
+  height: 200px;
+  margin: 10px;
+  padding-top: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  text-transform: capitalize;
+}
+.photo1,.photo2,.photo3 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin-top: -100px;
+}
+aside h3{
+margin-top: 40px; 
+font-size: 18px;
+}  

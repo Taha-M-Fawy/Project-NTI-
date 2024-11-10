@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 30px;
+        }
+        #textInput {
+            padding: 10px;
+            margin-bottom: 20px;
+            width: 200px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        p {
+            font-size: 16px;
+            color: #333;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="header">Text to Save into Local Storage</h2>
+        <input type="text" id="textInput" placeholder="Enter Text Here"><br>
+        <button onclick="saveToLocalStorage()">Save Value</button>
+        <p id="statusMessage"></p>
+
+        <h2>Text to Show from Local Storage</h2>
+        <button onclick="readFromLocalStorage()">Read From Local Storage</button>
+        <p id="displayText"></p>
+        <button onclick="deleteFromLocalStorage()">Delete From Local Storage</button>
+    </div>
+    
+    <script>
+        function saveToLocalStorage() {
+            let textInput = document.getElementById('textInput').value;
+            localStorage.setItem('storedText', textInput);
+            document.getElementById('statusMessage').innerText = 'Value saved';
+            document.getElementById('textInput').value = '';  
+        }
+
+        function readFromLocalStorage() {
+            let storedText = localStorage.getItem('storedText');
+            document.getElementById('displayText').innerText = storedText ? storedText : 'No value found in local storage.';
+        }
+
+        function deleteFromLocalStorage() {
+            localStorage.removeItem('storedText');
+            document.getElementById('displayText').innerText = '';
+            document.getElementById('statusMessage').innerText = 'Value deleted';
+        }
+    </script>
+</body>
+</html>

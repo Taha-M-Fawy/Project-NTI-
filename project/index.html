@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Project</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand">Taha M Fawy</a>
+                  <ul>
+                    <li><a href="#Second_sector">About Me</a></li>
+                    <li><a href="#Third_sector">Skills</a></li>
+                    <li><a href="#Fourth_sector">Projects</a></li>
+                    <li><a href="#Sixth_sector">Contact</a></li>
+                </ul>
+                </div>
+              </nav>
+        </div>
+    </header>
+    <main>
+        <section id="Second_sector">
+            <img src="./img/صوره شخصيه.jpg" alt="Profile Picture">
+            <article id="Describe_Myself">
+                <h2>Taha Mohammed</h2>
+                <strong>I'm 19 years old</strong>
+                <p>In the second year, Faculty of Computers and Information</p>
+                <h3  id="changing-text"></h3>   
+            </article>
+        </section>
+   
+        <section id="Third_sector">
+            <h2>Technologies Learned in the Current Course</h2>
+            <div id="Techniques">
+                <article class="first-technology">
+                    <i class="fab fa-html5"></i>
+                    <p>HTML</p>
+                </article>
+                <article class="Second-technology">
+                    <i class="fab fa-css3-alt"></i>
+                    <p>CSS</p>
+                </article>
+                <article class="Third-technology">
+                    <i class="fab fa-js-square"></i>
+                    <p>JavaScript</p>
+                </article>
+            </div>
+        </section>
+   
+        <section id="Fourth_sector">
+            <h2>Projects</h2>
+            <div class="project-columns">
+                <article class="project">
+                    <img src="./img/project 1.png" alt="Project 1">
+                    <a href="./task1/index.html" target="_blank">Project 1</a>
+                    <b>This project contains a personal photo
+                       and a personal card. When you place 
+                       the mouse pointer on the photo, 
+                       the personal card appears.</b>
+                </article>
+                <article class="project">
+                    <img src="./img/task2.png" alt="Project 2" class="project-2-css">
+                    <a href="./task 2/index.html" target="_blank">Project 2</a>
+                    <b>This project presents personal and professional information
+                       of a developer. The purpose of the site is to provide an 
+                       introduction about him and highlight his skills and 
+                       experience in the field of web development.</b>
+                </article>
+                <article class="project">
+                    <img src="./img/task3.png" alt="Project 3">
+                    <a href="./taskJs0/index.html" target="_blank">Project 3</a>
+                    <b>This project is about saving certain texts in the
+                       browser's local storage, and then reading or
+                       deleting the stored texts when needed.</b>
+                </article>
+            </div>
+        </section>
+
+        <section id="Fifth_sector">
+            <h2>Social media</h2>
+            <div class="social-media-columns"> 
+                <a href="https://www.linkedin.com/in/taha-mohamed-fawy-736438294/" target="_blank" class="social-media-icon">
+                    <i class="fab fa-linkedin"></i>
+                    <p>LinkedIn</p>
+                </a>
+                <a href="https://github.com/Taha-M-Fawy" target="_blank" class="social-media-icon">
+                    <i class="fab fa-github"></i>
+                    <p>GitHub</p>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100027387946911" target="_blank" class="social-media-icon">
+                    <i class="fab fa-facebook"></i>
+                    <p>Facebook</p>
+                </a>
+                <a href="https://x.com/TahaMfawy" target="_blank" class="social-media-icon">
+                    <i class="fab fa-twitter"></i>
+                    <p>Twitter</p>
+                </a>
+                <a href="https://www.youtube.com/feed/you" target="_blank" class="social-media-icon">
+                    <i class="fab fa-youtube"></i>
+                    <p>YouTube</p>
+                </a>
+            </div>
+        </section>
+
+        <section id="Sixth_sector">
+            <h2>Leave a Message</h2>
+            <div class="leave-message">
+                <div class="image-column">
+                    <img src="./img/اترك رسالة.jpg" alt="Contact Image">
+                </div>
+                <div class="form-column">
+                    <div id="error-message"></div> <!-- مكان لرسائل الخطأ -->
+                    <form onsubmit="validateEmail(); return false;">
+                        <div class="form-group">
+                            <label for="username">User Name:</label>
+                            <input type="text" id="username" name="username" required placeholder="Enter your User Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Gmail:</label>
+                            <input type="email" id="email" name="email" required placeholder="Enter your Gmail">
+                        </div>
+                        <div class="form-group">
+                            <label for="request-type">Type of Request:</label>
+                            <select id="request-type" name="request-type" required>
+                                <option value="">Select a type</option>
+                                <option value="consultation">Consultation</option>
+                                <option value="job">Job Opportunity</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Enter your Message"></textarea>
+                        </div>
+                        <div class="form-buttons">
+                            <button type="submit">Send</button>
+                            <button type="reset" id="delete-message">Delete</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
